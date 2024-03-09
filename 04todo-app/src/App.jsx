@@ -1,19 +1,19 @@
-import Input from "./functional/Input"
-import List from "./functional/List"
+// import Input from "./functional/Input"
+// import List from "./functional/List"
 
 
-function App() {
+// function App() {
 
-  return (
-    <>
-      <div classNameName="container mt-4">
+//   return (
+//     <>
+//       <div classNameName="container mt-4">
         
-       <Input />
-       <List />
+//        <Input />
+//        <List />
 
-      </div>
-    </>
-  )
-}
+//       </div>
+//     </>
+//   )
+// }
 
-export default App
+// export default App

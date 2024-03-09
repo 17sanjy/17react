@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Input(props) {
+
     let [todo, setTodo] = useState('');
     let [error, setError] = useState(false);
 
@@ -17,13 +18,22 @@ function Input(props) {
         event.preventDefault();
 
         if (todo.length > 0) {
-            props.addTodo(todo);
+            if (props.editData.index !== '') {
+                props.updateTodo(props.editData.index, todo);
+            } else {
+
+                props.addTodo(todo);
+            }
         } else {
             setError(true)
         }
 
         setTodo('');
     }
+
+    useEffect(() => {
+        setTodo(props.editData.data)
+    }, [props.editData.data])
 
     return (
         <form className="row g-3" onSubmit={submit}>
@@ -40,7 +50,11 @@ function Input(props) {
                 }
             </div>
             <div className="col-2">
-                <button type="submit" className="btn btn-primary mb-3">Add</button>
+                <button type="submit" className="btn btn-primary mb-3">
+                    {
+                        props.editData.index === '' ? "Add" : "Update"
+                    }
+                </button>
             </div>
         </form>
     )
