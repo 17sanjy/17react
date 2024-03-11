@@ -18,7 +18,7 @@ function App() {
 
     {/* App.module.css styles: return object, to get the style we can access by . op */}
 
-     {/* <p className={style.reds}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem praesentium hic sit molestiae deserunt! Ipsa, qui. A accusamus, consequatur, culpa incidunt quasi exercitationem, corporis expedita dolorem corrupti sequi esse. Unde!</p> */}
+     {/* <p className={style.red}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem praesentium hic sit molestiae deserunt! Ipsa, qui. A accusamus, consequatur, culpa incidunt quasi exercitationem, corporis expedita dolorem corrupti sequi esse. Unde!</p> */}
 
      {/* global style index.css  */}
      
