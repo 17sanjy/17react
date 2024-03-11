@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
 import './index.css'
-import UseReducer from './UseReducer'
+import ContextApi from './contextFunctional/ContextApi'
+import { store } from './contextFunctional/store'
+import ContextApiC from './contextClass/ContextApiC'
+// import UseReducer from './UseReducer'
 // import UseEffect from './UseEffect'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,6 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     {/* <UseEffect /> */}
 
-    <UseReducer />
+    {/* <UseReducer /> */}
+    <store.Provider value={{ counter: 1001 }}>
+      {/* <ContextApi /> */}
+
+      <ContextApiC />
+    </store.Provider>
   </React.StrictMode>,
 )
