@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
 import './index.css'
-import UseRef from './UseRef'
+import UseRef from './UseEffect'
+import UseEffect from './UseEffect'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
 
-    <UseRef />
+    <UseEffect />
   </React.StrictMode>,
 )
